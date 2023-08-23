@@ -4,7 +4,7 @@ const instance = axios.create({
     headers: {'X-Custom-Header': 'foobar'}
 });
 // 修改title为请求的数据
-instance.get('/')
+instance.get('/title')
 .then(function (response) {
     document.title = response.data;
 })
